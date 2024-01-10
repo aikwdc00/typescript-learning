@@ -4,6 +4,12 @@ enum ProjectStatus {
   Finished
 }
 
+/*
+class 也能傳遞, 或是當作type使用嗎？
+是的，你可以在類的定義中使用泛型（<T>）。泛型可以讓你在定義類的結構時，將某些部分留為待定，然後在創建該類的實例或繼承該類時，再指定這些部分的具體類型。
+
+例如，你可以定義一個泛型類Box<T>，其中T是盒子中物品的類型：
+*/ 
 class Project {
   constructor(
     public id: string,

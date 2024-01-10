@@ -12,12 +12,15 @@ class ProjectInput {
     )! as HTMLTemplateElement;
     this.hostElement = document.getElementById('app')! as HTMLDivElement;
 
+    console.log('this.templateElement',this.templateElement)
     const importedNode = document.importNode(
       this.templateElement.content,
       true
     );
+    console.log('importedNode',importedNode)
     this.element = importedNode.firstElementChild as HTMLFormElement;
     this.element.id = 'user-input';
+    console.log('this.element',this.element)
 
     this.titleInputElement = this.element.querySelector('#title') as HTMLInputElement;
     this.descriptionInputElement = this.element.querySelector('#description') as HTMLInputElement;
