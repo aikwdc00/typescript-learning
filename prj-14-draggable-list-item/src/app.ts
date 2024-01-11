@@ -170,6 +170,9 @@ abstract class Component<T extends HTMLElement, U extends HTMLElement> {
 // ProjectItem Class
 class ProjectItem extends Component<HTMLUListElement, HTMLLIElement>
   implements Draggable {
+  /*
+  在TypeScript中，implements關鍵字用於檢查一個類是否遵循特定的接口。接口定義了一個類應該有哪些方法和屬性，並且如何使用它們。當一個類implements一個接口時，它必須實現該接口中定義的所有方法和屬性。
+  */  
   private project: Project;
 
   get persons() {
