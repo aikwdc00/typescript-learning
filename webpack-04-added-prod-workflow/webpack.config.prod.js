@@ -1,4 +1,5 @@
 const path = require('path');
+// CleanPlugin的作用, 用于清理dist目录, 以便重新生成新的文件, 以免旧文件一直存在
 const CleanPlugin = require('clean-webpack-plugin');
 
 module.exports = {
